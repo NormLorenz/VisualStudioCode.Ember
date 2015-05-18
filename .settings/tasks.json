@@ -1,0 +1,34 @@
+{
+    // version number
+    "version": "0.1.0",
+    // the command to run
+    "command": "gulp",
+    // is a shell command or an external executable program
+    "isShellCommand": true,
+    // additional arguments to be passed to the command
+    "args": [
+        "--no-color"
+    ],
+    
+    // one or more task configurations
+    "tasks": [
+        {
+            "taskName": "templates",
+            "args": [],
+            "isBuildCommand": true
+        },
+        
+        {
+            "taskName": "app",
+            "args": [],
+            "isBuildCommand": true
+        },
+        
+        {
+            "taskName": "watch",
+            "args": [],
+            "isBuildCommand": true
+        }
+
+    ]
+}

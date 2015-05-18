@@ -1,0 +1,14 @@
+﻿/// <reference path="../../typings/ember/ember.d.ts"/>
+app = Ember.Application.create({
+    LOG_TRANSITIONS: true
+});
+
+app.Router.map(function() {
+  // put your routes here
+});
+
+app.IndexRoute = Ember.Route.extend({
+  model: function() {
+    return ['red', 'yellow', 'blue'];
+  }
+});
