@@ -10,8 +10,8 @@ var gulp = require('gulp'),
  * Build all files (javascript)
  **/
  gulp.task('all', function() {
-    gulp.start("app");
-    gulp.start("templates");
+    gulp.start('app');
+    gulp.start('templates');
  });
     
 /**
@@ -29,8 +29,7 @@ gulp.task('app', function() {
 gulp.task('templates', function() {
     return gulp.src('public/app/templates/**/*.hbs')
         .pipe(htmlbars({
-            compiler: compiler//, // required 
-            //pathHandler: function(filePath, separator) {} // optional 
+            compiler: compiler 
         }))
         .pipe(concat('templates.js'))
         .pipe(gulp.dest('public/build/'));
@@ -39,12 +38,12 @@ gulp.task('templates', function() {
 /**
  * Watch files modifications and rebuild
  **/
-gulp.task("watch", function() {
-    gulp.start("app");
-    gulp.start("templates");
+gulp.task('watch', function() {
+    gulp.start('app');
+    gulp.start('templates');
 
-    gulp.watch("public/app/**/*", function() {
-        gulp.start("app");
-        gulp.start("templates");
+    gulp.watch('public/app/**/*', function() {
+        gulp.start('app');
+        gulp.start('templates');
     });
 });

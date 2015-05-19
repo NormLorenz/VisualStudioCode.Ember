@@ -18,8 +18,8 @@
 - [.gitignore](https://help.github.com/articles/ignoring-files/)
 
 ## TODO
-- Rename the application
-- Build out a visual studio code folder in documents
+- Rename the application - DONE
+- Build out a visual studio code folder in documents - DONE
 - Figure how to ignore and regenerate node modules
-- Build a local git repository
+- Build a local git repository - DONE
 - Publish to git
