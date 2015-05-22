@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     compiler = require('./public/javascripts/ember-template-compiler.js'),
     htmlbars = require('gulp-htmlbars-compiler'),
     wrap = require('gulp-wrap'),
-    declare = require('gulp-declare'),    
     concat = require('gulp-concat');
 
 /**
